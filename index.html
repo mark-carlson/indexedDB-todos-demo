@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        .completed {
+            text-decoration: line-through;
+        }
+
+        .delete {
+            margin-left: 20px;
+        }
+
+        .todo {
+            display: inline;
+        }
+
+        li {
+            cursor: pointer;
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="todo-text" placeholder="Add a todo" />
+    <button id="btnAddTodo">Add Todo</button>
+    <div id="todo-list"></div>
+    <script src="js/todo.js"></script>
+</body>
+
+</html>
