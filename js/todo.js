@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const addTodo = () => {
     const toDoEl = document.getElementById("todo-text");
     const toDoText = toDoEl.value;
-    const tx = db.transaction(["todos"], "readwrite");
+    const tx = db.transaction("todos", "readwrite");
     tx.onerror = (e) => alert(`Error: ${e.target.error}`);
     todoList = tx.objectStore("todos");
     todoList.add({ text: toDoText, completed: false });
